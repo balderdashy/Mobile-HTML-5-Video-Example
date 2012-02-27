@@ -10,6 +10,8 @@ $crud = new CRUD(array(
 	<head>
 		<title></title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
 		<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
 		<link rel="stylesheet" type="text/css" href="stylesheets/unwired.css">
 	
@@ -17,7 +19,15 @@ $crud = new CRUD(array(
 		<link rel="stylesheet" href="stylesheets/mediaelementplayer.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		
-		<!-- Needed for older Android support and for other desktop browsers -->
+		<style type="text/css">
+			video.featured-video {
+				display:block;
+				margin: 2em auto 0;
+				width: 320px;
+			}
+		</style>
+		
+		<!-- Only required for older Android support and for other desktop browsers -->
 		<script src="scripts/mediaelement-and-player.min.js"></script>
 
 	</head>
@@ -46,7 +56,7 @@ $crud = new CRUD(array(
 		
 		<h1>HTML 5 Video Example</h1>
 		
-		<video width="320" height="240" poster="<?php $crud->read('vidpon jpg') ?>" controls="controls" preload="none">
+		<video class="featured-video" width="320" height="240" poster="<?php $crud->read('vidpon jpg') ?>" controls="controls" preload="none">
 			<!-- MP4 for Safari, IE9, iPhone, iPad, Android, and Windows Phone 7 -->
 			<source type="video/mp4" src="<?php $crud->read('vidpon mp4') ?>" />
 			<!-- WebM/VP8 for Firefox4, Opera, and Chrome -->
