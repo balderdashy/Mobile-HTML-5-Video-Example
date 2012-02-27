@@ -22,7 +22,7 @@ $crud = new CRUD(array(
 		<style type="text/css">
 			video.featured-video {
 				display:block;
-				margin: 0 auto 0;
+				margin: 50px auto 0;
 				width: 320px;
 			}
 			
