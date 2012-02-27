@@ -25,6 +25,23 @@ $crud = new CRUD(array(
 				margin: 0 auto 0;
 				width: 320px;
 			}
+			
+			@media only screen and (min-width: 1px) and (max-width: 650px) {
+				#uwn-topbar h2 {
+					display:none;
+				}
+				#uwn-topbar h3 {
+					display:none;
+				}
+				
+				
+				#uwn-topbar a.uwn-branding {
+					width: 255px;
+					display:block;
+					float:none!important;
+					margin:0 auto;
+				}
+			}
 		</style>
 		
 		<!-- Only required for older Android support and for other desktop browsers -->
@@ -38,7 +55,7 @@ $crud = new CRUD(array(
 				<h2 id="navigation-sub-header">mobile apps from the cloud</h2>
 				
 			</a>
-				<h3>HTML 5 Video Example</h3>
+			<h3>HTML 5 Video Example</h3>
 		</div>
 		
 		
