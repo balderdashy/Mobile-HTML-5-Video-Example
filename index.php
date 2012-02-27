@@ -14,7 +14,7 @@ $crud = new CRUD(array(
 		<link rel="stylesheet" type="text/css" href="stylesheets/unwired.css">
 	
 	
-		<link rel="stylesheet" href="mediaelementplayer.css" />
+		<link rel="stylesheet" href="stylesheets/mediaelementplayer.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		
 		<!-- Needed for older Android support and for other desktop browsers -->
