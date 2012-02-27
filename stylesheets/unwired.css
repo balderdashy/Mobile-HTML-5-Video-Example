@@ -6,7 +6,7 @@
 html {
 	height:100%;
 	background: #CCCFC0 url('../images/bg-texture.png');
-	font-family: arial, helvetica, sans-serif;
+	font-family: helvetica, arial, sans-serif;
 }
 
 #uwn-topbar {
@@ -21,10 +21,12 @@ html {
 	box-shadow: 0 1px 4px rgba(60,60,60,0.7);
 }
 #uwn-topbar a.uwn-branding {
+	float:left;
+	width: 45%;
 	display: block;
-	width: 300px;
+/*	width: 300px;*/
 	height: 50px;
-	margin-left: 30px;
+	margin-left: 3%;
 }
 #uwn-topbar a.uwn-branding h1 {
 	
@@ -38,12 +40,25 @@ html {
 }
 
 #uwn-topbar a.uwn-branding h2 {
+	
 	color: #CCCFC0;
 	font-size: 12px;
 	margin-left: 90px;
 	font-style: italic;
 	text-decoration: none;
 	line-height: 0.5em;
+}
+
+#uwn-topbar h3 {
+	float:right;
+	text-align: right;
+	width: 45%;
+	margin-right:5%;
+	font-size:24px;
+	padding-top: 1em;
+	font-weight:normal;
+	color:white;
+	text-transform: uppercase;
 }
 
 #uwn-container {
