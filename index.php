@@ -14,9 +14,11 @@ $crud = new CRUD(array(
 		<link rel="stylesheet" type="text/css" href="stylesheets/unwired.css">
 	
 	
-	<script src="jquery.js"></script>
-<script src="mediaelement-and-player.min.js"></script>
-<link rel="stylesheet" href="mediaelementplayer.css" />
+		<link rel="stylesheet" href="mediaelementplayer.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		
+		<!-- Needed for older Android support and for other desktop browsers -->
+		<script src="scripts/mediaelement-and-player.min.js"></script>
 
 	</head>
 	<body>
@@ -44,7 +46,7 @@ $crud = new CRUD(array(
 		
 		<h1>HTML 5 Video Example</h1>
 		
-		<video width="320" height="240" poster="poster.jpg" controls="controls" preload="none">
+		<video width="320" height="240" poster="<?php $crud->read('vidpon jpg') ?>" controls="controls" preload="none">
 			<!-- MP4 for Safari, IE9, iPhone, iPad, Android, and Windows Phone 7 -->
 			<source type="video/mp4" src="<?php $crud->read('vidpon mp4') ?>" />
 			<!-- WebM/VP8 for Firefox4, Opera, and Chrome -->
