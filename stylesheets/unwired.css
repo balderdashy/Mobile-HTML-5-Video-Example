@@ -1,0 +1,52 @@
+/*
+* Standard Demo Stylesheet
+* c. Unwired Nation 2012
+*/
+/* Shell rules */
+html {
+	height:100%;
+	background: #CCCFC0 url('../images/bg-texture.png');
+	font-family: arial, helvetica, sans-serif;
+}
+
+#uwn-topbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #4D4D4F;
+	height: 70px;
+	width:100%;
+	z-index: 10000;
+	overflow:auto;
+	box-shadow: 0 1px 4px rgba(60,60,60,0.7);
+}
+#uwn-topbar a.uwn-branding {
+	display: block;
+	width: 300px;
+	height: 50px;
+	margin-left: 30px;
+}
+#uwn-topbar a.uwn-branding h1 {
+	
+	margin-top: 10px;
+	margin-bottom:10px;
+	width: 255px;
+	height: 30px;
+	background: url("../images/logo_web_white.png");
+	display: block;
+	text-indent: -9999px;
+}
+
+#uwn-topbar a.uwn-branding h2 {
+	color: #CCCFC0;
+	font-size: 12px;
+	margin-left: 90px;
+	font-style: italic;
+	text-decoration: none;
+	line-height: 0.5em;
+}
+
+#uwn-container {
+	margin-top: 60px;
+	padding-bottom: 30px;
+}
